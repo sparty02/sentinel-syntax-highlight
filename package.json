@@ -1,0 +1,26 @@
+{
+    "name": "sentinel-syntax-highlight",
+    "displayName": "sentinel-syntax-highlight",
+    "description": "Syntax highlighting for Sentinel files",
+    "version": "0.0.1",
+    "publisher": "fis",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sentinel",
+            "aliases": ["Sentinel", "sentinel"],
+            "extensions": [".sentinel"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sentinel",
+            "scopeName": "source.sentinel",
+            "path": "./syntaxes/sentinel.tmLanguage"
+        }]
+    }
+}
